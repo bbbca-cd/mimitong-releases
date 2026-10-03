@@ -1,6 +1,6 @@
 {
-  "versionCode": 7,
-  "versionName": "0.3.5",
-  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.5.apk",
-  "notes": "修复微信转账识别不到 + 支付宝重复刷屏：\n1. 界面节点树改为无条件遍历（旧版在事件自带文本非空时会跳过树遍历，\n   微信事件常含「微信支付」词但无金额，导致转账金额永远抓不到）\n2. 抓取片段排序后拼接 + 包含关系去重，同一页面不再刷几十条重复\n3. 正式模式要求文本必须含数字，过滤纯标签噪音\n4. 调试捕获现在带 root=OK/root=NULL 诊断前缀"
+  "versionCode": 8,
+  "versionName": "0.3.6",
+  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.6.apk",
+  "notes": "修复：支付宝余额页面被误识别成收支。\n现在只认带「交易动作词」的消息（支付/支出/消费/收款/转账/存入/到账/红包/退款/还款/扣款/工资等），\n余额、昨日收益等页面展示数字一律不碰。调试捕获开启时也禁止自动入账。"
 }
