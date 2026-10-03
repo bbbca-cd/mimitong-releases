@@ -1,6 +1,6 @@
 {
-  "versionCode": 8,
-  "versionName": "0.3.6",
-  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.6.apk",
-  "notes": "修复：支付宝余额页面被误识别成收支。\n现在只认带「交易动作词」的消息（支付/支出/消费/收款/转账/存入/到账/红包/退款/还款/扣款/工资等），\n余额、昨日收益等页面展示数字一律不碰。调试捕获开启时也禁止自动入账。"
+  "versionCode": 9,
+  "versionName": "0.3.7",
+  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.7.apk",
+  "notes": "微信转账识别终极修复：\n1. 部分手机的微信不把聊天内容暴露给无障碍节点树，树遍历读不到；\n   本版新增屏幕文字识别（OCR）兜底：微信界面变动时截屏离线识别，\n   节点读不到就「看」屏幕（图片仅在手机内存处理，不存储不上传）\n2. 同时修复：支付宝余额页面被误识别成收支——现在只认带交易动作词的消息\n   （支付/支出/收款/转账/红包等），余额、昨日收益等展示数字一律不碰"
 }
