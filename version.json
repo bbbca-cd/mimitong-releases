@@ -1,6 +1,6 @@
 {
-  "versionCode": 4,
-  "versionName": "0.3.2",
-  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.2.apk",
-  "notes": "本版更新：\n1. 修复微信转账/红包方向识别（发红包不再记成收入）\n2. 无障碍监控：微信零钱/余额宝应用内消息自动识别\n3. 应用内自动更新（本版起生效，以后更新点一下就行）\n4. 双保险自动备份（内部滚动 + 下载目录周备份）\n5. 日历视图、账单 CSV 导入等此前功能"
+  "versionCode": 5,
+  "versionName": "0.3.3",
+  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.3.apk",
+  "notes": "修复微信转账/红包识别不到：\n微信聊天消息是自定义控件渲染，无障碍事件文本常为空，\n本版改为遍历界面节点树抓取，转账/红包消息可正常识别。"
 }
