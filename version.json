@@ -1,6 +1,6 @@
 {
-  "versionCode": 5,
-  "versionName": "0.3.3",
-  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.3.apk",
-  "notes": "修复微信转账/红包识别不到：\n微信聊天消息是自定义控件渲染，无障碍事件文本常为空，\n本版改为遍历界面节点树抓取，转账/红包消息可正常识别。"
+  "versionCode": 6,
+  "versionName": "0.3.4",
+  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.4.apk",
+  "notes": "微信转账/红包识别排查增强：\n1. 新增「调试捕获」：设置里开启后，通知中心会显示抓到的全部原始文本，一眼定位问题\n2. 更新后无障碍被系统停用时自动提醒重新开启\n3. 节点遍历范围扩大、新增文本变化事件监听"
 }
