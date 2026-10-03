@@ -1,6 +1,6 @@
 {
-  "versionCode": 6,
-  "versionName": "0.3.4",
-  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.4.apk",
-  "notes": "微信转账/红包识别排查增强：\n1. 新增「调试捕获」：设置里开启后，通知中心会显示抓到的全部原始文本，一眼定位问题\n2. 更新后无障碍被系统停用时自动提醒重新开启\n3. 节点遍历范围扩大、新增文本变化事件监听"
+  "versionCode": 7,
+  "versionName": "0.3.5",
+  "apkUrl": "https://bbbca-cd.github.io/mimitong-releases/mimitong-v0.3.5.apk",
+  "notes": "修复微信转账识别不到 + 支付宝重复刷屏：\n1. 界面节点树改为无条件遍历（旧版在事件自带文本非空时会跳过树遍历，\n   微信事件常含「微信支付」词但无金额，导致转账金额永远抓不到）\n2. 抓取片段排序后拼接 + 包含关系去重，同一页面不再刷几十条重复\n3. 正式模式要求文本必须含数字，过滤纯标签噪音\n4. 调试捕获现在带 root=OK/root=NULL 诊断前缀"
 }
